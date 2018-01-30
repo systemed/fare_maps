@@ -6,8 +6,8 @@ A couple of hacked-up scripts to visualise fares from a given station.
 ## Prerequisites
 
 * Ruby and Python.
-* rasem module for Ruby (draws SVGs).
-* Get https://github.com/dracos/split-ticket and copy the `split` and `data` directories into this directory.
+* rasem module for Ruby (draws SVGs), version 0.6.1: `gem install rasem -v 0.6.1`
+* Get https://github.com/dracos/split-ticket and copy or symlink the `split` and `data` directories into this directory.
 
 ## Running
 

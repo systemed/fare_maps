@@ -22,7 +22,7 @@
 		x = (v[:lon]+6)*100
 		y = 1500-(v[:lat]-50)*150
 		svg.circle( x, y, 2, { :fill => "##{colour}" } )
-		svg.text(x, y, crs, 0, 0, { :font_size => 3 } )
+		svg.text(x, y, crs, { :font_size => 3 } )
 	end
 	svg.close
 	File.write('output.svg', svg.output)

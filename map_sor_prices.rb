@@ -25,7 +25,7 @@
 		y = 1500-(v[:lat]-50)*150
 		next if colour.nil?
 		svg.circle( x, y, 2, { :fill => "##{colour}" } )
-		svg.text(x, y, crs, 0, 0, { :font_size => 3, :fill => "##{colour}" } )
+		svg.text(x, y, crs, { :font_size => 3, :fill => "##{colour}" } )
 	end
 	svg.close
 	File.write('output.svg', svg.output)
